@@ -1,0 +1,95 @@
+---
+title: ARTEX Offensive Toolchain Execution
+id: a1e7c0b2-artex-proc-0001
+status: experimental
+description: Execution of scanners bundled in the ARTEX image from a host
+references:
+  - THN/Badbyte 2026-11-05
+logsource:
+  category: process_creation
+detection:
+  selection:
+    Image|endswith:
+      - '/nuclei'
+      - '/httpx'
+      - '/subfinder'
+      - '/katana'
+      - '/ffuf'
+      - '/dalfox'
+      - '/sqlmap'
+      - '/bbot'
+  condition: selection
+falsepositives:
+  - Authorized pentest / sanctioned ARTEX host
+level: high
+tags:
+  - attack.discovery
+  - attack.t1595
+---
+title: ARTEX Custom-Tool Python Drop-and-Exec
+id: a1e7c0b2-artex-proc-0002
+status: experimental
+description: Python executed against a script freshly written under a .tools directory (ARTEX custom-tool pattern)
+logsource:
+  category: process_creation
+detection:
+  selection:
+    Image|endswith:
+      - '/python'
+      - '/python3'
+    CommandLine|contains: '.tools/'
+  condition: selection
+level: medium
+tags:
+  - attack.execution
+  - attack.t1059.006
+---
+title: ARTEX Enrichment Probe User-Agent
+id: a1e7c0b2-artex-net-0003
+status: experimental
+description: Inbound HTTP carrying the ARTEX asset-enrichment User-Agent
+logsource:
+  category: webserver
+detection:
+  selection:
+    cs-user-agent|contains: 'artex-enrich/1.0'
+  condition: selection
+level: high
+tags:
+  - attack.reconnaissance
+  - attack.t1595
+---
+title: ARTEX Backdoor Pre-Auth Trigger on Login
+id: a1e7c0b2-artex-web-0004
+status: experimental
+description: Unauthenticated POST to the ARTEX login endpoint carrying an unexpected captcha/extra field (verifyCaptcha backdoor trigger)
+logsource:
+  category: webserver
+detection:
+  selection_uri:
+    cs-method: 'POST'
+    cs-uri-stem|endswith: '/api/auth/login'
+  selection_marker:
+    cs-body|contains: 'captcha'
+  condition: selection_uri and selection_marker
+falsepositives:
+  - Legitimate login traffic does not include a captcha field in clean ARTEX
+level: high
+tags:
+  - attack.initial-access
+  - attack.t1190
+---
+title: ARTEX Campaign C2 Contact
+id: a1e7c0b2-artex-net-0005
+status: experimental
+description: Network connection to the ARTEX server IP tied to the South Korean bank campaign
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '38.244.50.120'
+  condition: selection
+level: critical
+tags:
+  - attack.command-and-control
