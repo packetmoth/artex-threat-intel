@@ -1,0 +1,17 @@
+indicator_type,value,category,confidence,source,note
+docker_image,tomicdd/artex:latest,supply-chain-backdoor,confirmed,Badbyte 2026-11-05,Backdoored image; 7913 pulls by 3 Nov
+docker_image,congdonglinux/artex,supply-chain-backdoor,confirmed,Badbyte 2026-11-05,Identical digests to tomicdd; same backdoor
+image_layer_sha256,cb85a7206290dc1813e3203e044741054b26c7a7c557c7d9d6d91af20aeb232b,supply-chain-backdoor,confirmed,Badbyte 2026-11-05,Image layer carrying the malicious binary
+binary_sha256,d5070f52262effe216b840711343bff8f2787f39208d887d8dfd9c673f8d1573,supply-chain-backdoor,confirmed,Badbyte 2026-11-05,Trojanized /app/artex server binary
+webui_build_id,3aC1db3gGU08O4UHbAt4J,supply-chain-backdoor,confirmed,Badbyte 2026-11-05,Build ID in the backdoored web UI
+code_pattern,verifyCaptcha,backdoor-signature,confirmed,Badbyte 2026-11-05,Hidden login function; runs input as root pre-auth
+request_field,captcha field on POST /api/auth/login,backdoor-signature,confirmed,Badbyte 2026-11-05,Legit login has no captcha field; best live signal
+build_metadata,+dirty / no -trimpath / version dev,backdoor-signature,confirmed,Badbyte 2026-11-05,Built from modified source; official builds are clean
+github_repo,trhhubsd/ARTEXX,supply-chain-backdoor,confirmed,THN 2026-11-05,Fork edited to pull the backdoored image; removed
+docker_image,mianhuatang11/artex,supply-chain-suspect,unconfirmed,THN 2026-11-05,Other publisher; contents not verified
+docker_image,autumn26/artex,supply-chain-suspect,unconfirmed,THN 2026-11-05,Other publisher; contents not verified
+docker_image,andy1099zz/artex,supply-chain-suspect,unconfirmed,THN 2026-11-05,Other publisher; contents not verified
+docker_image,dgddw/artex,supply-chain-suspect,unconfirmed,THN 2026-11-05,Other publisher; contents not verified
+docker_image,ylh440104/artex,supply-chain-suspect,unconfirmed,THN 2026-11-05,Other publisher; contents not verified
+github_repo,mhtsec/ARTEX,supply-chain-suspect,unconfirmed,THN 2026-11-05,Removed; former most-starred fork
+github_repo,RuoJi6/ARTEX,supply-chain-suspect,unconfirmed,THN 2026-11-05,Status unknown
