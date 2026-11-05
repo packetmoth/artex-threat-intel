@@ -1,0 +1,34 @@
+rules:
+  - id: artex-login-shell-exec
+    languages: [go]
+    severity: ERROR
+    message: >
+      Shell execution reachable in an authentication/login source file — matches the
+      ARTEX verifyCaptcha pre-auth RCE backdoor (input run through sh -c as root
+      before the credential check).
+    patterns:
+      - pattern-either:
+          - pattern: exec.Command("sh", "-c", ...)
+          - pattern: exec.Command("/bin/sh", "-c", ...)
+          - pattern: exec.CommandContext(..., "sh", "-c", ...)
+          - pattern: exec.CommandContext(..., "/bin/sh", "-c", ...)
+    paths:
+      include: ["*auth*.go", "*login*.go", "*server*.go"]
+
+  - id: artex-verifycaptcha-symbol
+    languages: [go]
+    severity: ERROR
+    message: >
+      'verifyCaptcha' present — the known trojanized-ARTEX backdoor function.
+      Clean ARTEX login takes only username+password and has no captcha.
+    pattern-regex: verifyCaptcha
+
+  - id: artex-login-captcha-field
+    languages: [go]
+    severity: WARNING
+    message: >
+      A captcha field on the login request struct. Clean ARTEX login is
+      username+password only; the backdoor adds this field to carry its command.
+    pattern-regex: (?i)captcha
+    paths:
+      include: ["*auth*.go", "*login*.go"]
