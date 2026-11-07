@@ -15,7 +15,6 @@ docker_image,dgddw/artex,supply-chain-suspect,unconfirmed,THN 2026-11-05,Other p
 docker_image,ylh440104/artex,supply-chain-suspect,unconfirmed,THN 2026-11-05,Other publisher; contents not verified
 github_repo,mhtsec/ARTEX,supply-chain-suspect,unconfirmed,THN 2026-11-05,Removed; former most-starred fork
 github_repo,RuoJi6/ARTEX,supply-chain-suspect,unconfirmed,THN 2026-11-05,Status unknown
-ipv4,38.244.50[.]120,campaign-c2,confirmed,CrowdStrike 2026-10,Attacker ARTEX server (Korean bank campaign)
 llm_backend,deepseek-v4.1-flash,campaign-tooling,confirmed,CrowdStrike 2026-10,Primary AI model in the campaign
 llm_backend,GLM-5.3,campaign-tooling,confirmed,CrowdStrike 2026-10,Additional AI model
 llm_backend,Grok-4.6,campaign-tooling,confirmed,CrowdStrike 2026-10,Additional AI model

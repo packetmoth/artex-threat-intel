@@ -1,0 +1,48 @@
+indicator_defanged,type,role,campaign_actor,first_seen,status_note,source,source_date
+199.19.95[.]66,ipv4,WISP C2 node,Storm-3358 (financial sector),2026-11-02,Active as of 2026-11-06,Microsoft Threat Intelligence,2026-11-06
+199.19.95[.]67,ipv4,WISP C2 node,Storm-3358 (financial sector),2026-11-02,Active as of 2026-11-06,Microsoft Threat Intelligence,2026-11-06
+199.19.95[.]68,ipv4,WISP C2 node,Storm-3358 (financial sector),2026-11-02,Active as of 2026-11-06,Microsoft Threat Intelligence,2026-11-06
+91.92.240[.]238,ipv4,ARTEX server,Storm-3358 (financial sector),2026-11-04,Active as of 2026-11-06,Microsoft Threat Intelligence,2026-11-06
+85.11.168[.]45,ipv4,ARTEX server,Storm-3358 (financial sector),2026-11-04,Active as of 2026-11-06,Microsoft Threat Intelligence,2026-11-06
+85.11.167[.]52,ipv4,C2 server,Storm-3358 (financial sector),2026-11-04,Active as of 2026-11-06,Microsoft Threat Intelligence,2026-11-06
+178.16.54[.]129,ipv4,ARTEX server,Storm-3358 (financial sector),2026-10-19,Active as of 2026-11-06 (Microsoft's Sentinel query has typo 178.15.54.129),Microsoft Threat Intelligence,2026-11-06
+31.77.229[.]35,ipv4,ARTEX server,Storm-3358 (financial sector),2026-10-28,Active as of 2026-11-06,Microsoft Threat Intelligence,2026-11-06
+38.244.50[.]120,ipv4,Threat actor-controlled ARTEX server / open directory,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+101.53.80[.]20,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+205.214.59[.]31,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+124.155.252[.]63,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+154.201.79[.]246,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+23.248.249[.]90,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+23.158.220[.]98,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+103.248.148[.]84,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+203.160.133[.]172,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+209.209.85[.]38,ipv4,Proxy,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike Intelligence,2026-10-07
+xcai[.]pro,domain,LLM API proxy/reseller used by actor,South Korea financial campaign (TAG-217),2026-09,Historical,CrowdStrike via Rewterz/Censys reporting,2026-10
+144.172.64[.]60,ipv4,Storm-0940 infrastructure,Storm-0940 (ConnectWise / M365),2026-09,Historical,Microsoft via Censys/CybersecurityNews,2026-11-06
+144.172.64[.]99,ipv4,Storm-0940 infrastructure,Storm-0940 (ConnectWise / M365),2026-09,Historical,Microsoft via Censys/CybersecurityNews,2026-11-06
+144.172.64[.]128,ipv4,Storm-0940 infrastructure,Storm-0940 (ConnectWise / M365),2026-09,Historical,Microsoft via Censys/CybersecurityNews,2026-11-06
+1.14.104[.]208,ipv4,ARTEX co-hosted with C2/tunneling,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+1.14.193[.]53,ipv4,ARTEX co-hosted with C2/tunneling,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+101.42.4[.]91,ipv4,ARTEX co-hosted with C2/tunneling,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+192.210.193[.]156,ipv4,ARTEX co-hosted with C2/tunneling,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+45.87.53[.]3,ipv4,ARTEX + CyberStrikeAI/ARL/Vshell,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+45.87.53[.]4,ipv4,ARTEX + CyberStrikeAI/ARL/Vshell,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+45.87.53[.]6,ipv4,ARTEX + CyberStrikeAI/ARL/Vshell,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+45.87.53[.]10,ipv4,ARTEX + CyberStrikeAI/ARL/Vshell,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+45.87.53[.]14,ipv4,ARTEX + CyberStrikeAI/ARL/Vshell,Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+104.250.149[.]210,ipv4,Customized ARTEX console (MX host),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+104.250.149[.]211,ipv4,Customized ARTEX console (MX host),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+104.250.149[.]212,ipv4,Customized ARTEX console (MX host),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+104.250.149[.]213,ipv4,Customized ARTEX console (MX host),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+110.42.215[.]163:18080,ipv4:port,Open directory (exploits/implants/loaders),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+111.68.4[.]13:18080,ipv4:port,Open directory (exploits/implants/loaders),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+108.165.147[.]226:8299,ipv4:port,Open directory (exploits/implants/loaders),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+206.187.215[.]173:8081,ipv4:port,Open directory (exploits/implants/loaders),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+181.41.194[.]136:8081,ipv4:port,Open directory (exploits/implants/loaders),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+203.195.243[.]103:80,ipv4:port,Open directory (exploits/implants/loaders),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+154.12.86[.]207:18080,ipv4:port,Open directory (exploits/implants/loaders),Unattributed (Censys scan),2026-11-04,Exposed as of 2026-11-04,Censys,2026-11-05
+101.35.6[.]190,ipv4,ARTEX copycat infrastructure,Unattributed,2026-10-15,Historical,SOCRadar IOC Radar,2026-10-15
+101.36.127[.]225,ipv4,ARTEX copycat infrastructure,Unattributed,2026-10-15,Historical,SOCRadar IOC Radar,2026-10-15
+38.11.173[.]0/24,cidr,Repeated ARTEX hosting config (context only - do not block blindly),Unattributed (Censys scan),2026-11-04,Context,Censys,2026-11-05
+38.11.221[.]0/24,cidr,Repeated ARTEX hosting config (context only - do not block blindly),Unattributed (Censys scan),2026-11-04,Context,Censys,2026-11-05
+156.234.0[.]0/16,cidr,Repeated ARTEX hosting config (context only - do not block blindly),Unattributed (Censys scan),2026-11-04,Context,Censys,2026-11-05
